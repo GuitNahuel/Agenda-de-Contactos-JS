@@ -1,0 +1,64 @@
+* {
+    margin:0; 
+    padding:0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h2{
+    color: rgb(223, 246, 255);
+    background-color: rgb(37, 109, 133);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+input, .btn-agregar-tarea{
+    width: 200px;
+    margin: 10px;
+    color: black;
+    border: 2px solid gray;
+}
+.formulario-datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.listado-tareas{
+    margin-top: 20px;
+    background-color:grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.tarea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+    border: 5px double black;
+}
+
+@media screen and (max-width: 768px) { 
+    .tarea{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center
+    }
+    h2{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    input, .btn-agregar-tarea{margin: 5px 10px 5px 10px;
+    
+    }
+}
